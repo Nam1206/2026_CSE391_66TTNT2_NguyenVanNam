@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f5f6fa;
+}
+/* ===== HIDDEN CHECKBOX =====*/
+#show-modal {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.search input {
+    padding: 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+}
+
+/* ===== CONTENT ===== */
+.container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-btn {
+    background: #0d6efd;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f8f9fa;
+}
+
+.btn-edit {
+    background: #ffc107;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ===== MODAL (ẨN) ===== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#show-modal:checked ~ .modal {
+    display: flex;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-box {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* ===== MODAL HEADER ===== */
+.modal-header {
+    background: #0d6efd;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    cursor: pointer;
+}
+
+/* ===== MODAL BODY ===== */
+.modal-body {
+    padding: 15px;
+}
+
+.modal-body label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-body input,
+.modal-body select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.radio {
+    margin-top: 5px;
+}
+
+/* ===== MODAL FOOTER ===== */
+.modal-footer {
+    padding: 10px;
+    text-align: right;
+}
+
+.save {
+    background: #198754;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: #6c757d;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}

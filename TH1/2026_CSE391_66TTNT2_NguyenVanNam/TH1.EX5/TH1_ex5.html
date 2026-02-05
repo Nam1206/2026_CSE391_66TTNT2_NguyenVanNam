@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR Management</title>
+    <link rel="stylesheet" href="ex5.css">
+</head>
+<body>
+
+<!-- hidden checkbox -->
+<input type="checkbox" id="show-modal">
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="navbar-left">
+        <h2>HR Management</h2>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <div class="header">
+        <h2>Employee</h2>
+        <!-- OPEN MODAL -->
+        <label for="show-modal" class="add-btn">+ Add</label>
+    </div>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Position</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fatima Beatriz</td>
+            <td>FatimaBeatriz@gmail.com</td>
+            <td>0985674321</td>
+            <td>Staff</td>
+            <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Gabriel Hanna</td>
+            <td>GabrielHanna@gmail.com</td>
+            <td>0353674231</td>
+            <td>Staff</td>
+            <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- MODAL -->
+<div class="modal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <span>New Employee</span>
+            <!-- CLOSE MODAL -->
+            <label for="show-modal" class="close">✕</label>
+        </div>
+
+        <div class="modal-body">
+            <label>Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Phone</label>
+            <input type="text">
+
+            <label>Position</label>
+            <select>
+                <option>-- Select Position --</option>
+                <option>Staff</option>
+                <option>Manager</option>
+                <option>CEO</option>
+            </select>
+
+            <label>Sex</label>
+            <div class="radio">
+                <input type="radio" name="sex"> Male
+                <input type="radio" name="sex"> Female
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button class="save">Save</button>
+            <!-- CLOSE MODAL -->
+            <label for="show-modal" class="cancel">Cancel</label>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <table cellpadding="5">
+            
+            <!-- Basic Info Section -->
+            <tr>
+                <td colspan="2" class="section-title">Basic Info</td>
+            </tr>
+            
+            <tr>
+                <td>Employee ID</td>
+                <td><input type="number" name="employeeId" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastName" value="" required></td>
+            </tr>
+            
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstName" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="xxx" name="gender" value="xxx">
+                    <label for="xxx">XXX</label><br>
+                    <input type="radio" id="zzz" name="gender" value="zzz" checked>
+                    <label for="zzz">ZZZ</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Title</td>
+                <td><input type="text" name="title" value="Sales Representative"></td>
+            </tr>
+            
+            <tr>
+                <td>Suffix</td>
+                <td><input type="text" name="suffix" value="Ms."></td>
+            </tr>
+            
+            <tr>
+                <td>BirthDate</td>
+                <td><input type="datetime-local" name="birthDate" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>HireDate</td>
+                <td><input type="datetime-local" name="hireDate" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>SSN # (if applicable)</td>
+                <td><input type="text" name="ssn" value=""></td>
+            </tr>
+            
+            <tr>
+                <td><label for="reportsTo">Reports To</label></td>
+                <td>
+                    <select id="reportsTo" name="reportsTo">
+                        <option value="Buchanan" selected>Buchanan</option>
+                        <option value="Fuller">ABCD</option>
+                        <option value="Leverling">EFGH</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Contact Info Section -->
+            <tr>
+                <td colspan="2" class="section-title">Contact Info</td>
+            </tr>
+            
+            <tr>
+                <td >Email</td>
+                <td><input type="email" name="email" value="name@example.com"></td>
+            </tr>
+            
+            <tr> 
+                <td>Address</td>
+                <td><input type="text" name="address" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Region</td>
+                <td><input type="text" name=""></td>
+            </tr>
+            
+            <tr>
+                <td>Postal Code</td>
+                <td><input type="text" name="postalCode" value=""></td>
+            </tr>
+            
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>US Home Phone</td>
+                <td><input type="number" name="usHomePhone" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Photo</td>
+                <td><input type="image" name="photo" value=""></td>
+            </tr>
+            
+            <!-- Optional Info Section -->
+            <tr>
+                <td colspan="2" class="section-title">Optional Info</td>
+            </tr>
+            
+            <tr>
+                <td>Notes</td>
+                <td>
+                    <div class="editor-container">
+                        <div class="editor-toolbar">
+                            <button type="button" title="Bold"><b>B</b></button>
+                            <button type="button" title="Italic"><i>I</i></button>
+                            <button type="button" title="Underline"><u>U</u></button>
+                            <button type="button" title="Strikethrough"><s>S</s></button>
+                            <button type="button">X</button>
+                            <select>
+                                <option>8</option>
+                                <option>9</option>
+                                <option selected>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <button type="button">x</button>
+                        </div>
+                        <textarea name="notes"></textarea>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Preferred Shift</td>
+                <td>
+                    <input type="checkbox" id="regular" name="shift" value="regular">
+                    <label for="regular">Regular</label><br>
+                    <input type="checkbox" id="graveyard" name="shift" value="graveyard" checked>
+                    <label for="graveyard">Gravy Yard</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Active?</td>
+                <td>
+                    <input type="checkbox" id="active" name="active" checked>
+                    <label for="active"></label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Are you human?</td>
+                <td>
+                    <input type="checkbox" id="human-check" hidden>
+                    <div class="box">
+                        <span class="captcha-text" >T I D A M O</span>
+                    </div>
+                    <label for="human-check" class="link">Click to change</label>
+    </td>
+            </tr>
+            
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <button class="button submit-btn"> Submit</button>
+                    <button class="button cancel-btn"> X Cancel</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="font-size: 12px boil; color: #221f1f;">
+                    <span style="color: red;">*</span> required
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
