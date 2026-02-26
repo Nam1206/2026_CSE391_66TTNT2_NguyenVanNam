@@ -1,0 +1,80 @@
+/* *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } */
+body {
+    font-size: 100px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px 60px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 60px 0 50px;
+    color: #2a2a2a;
+}
+
+.content-layout {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    size: 100%;
+}
+.card {
+    font-size: 20px;
+    flex: 0 0 250px;
+    background: #fff;
+    border: 1px solid #e0ddd5;
+    border-radius: 4px;
+    padding: 28px 24px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.06);
+  }
+
+.card h2 {
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.card .author-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.card .author-title {
+    font-size: 13px;
+    color: #42c7e1;
+}
+
+.text-column {
+    flex: auto;
+}
+
+.text-column p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.text-column p.bold-para {
+    font-weight: 700;
+    color: #1a1a1a;
+}
