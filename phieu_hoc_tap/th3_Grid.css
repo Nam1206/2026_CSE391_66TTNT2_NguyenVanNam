@@ -1,0 +1,31 @@
+
+.gallery {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 16px;
+       max-width: 1200px;
+        margin: 40px auto;
+}
+
+.item {
+    background: linear-gradient(135deg, #f093fb 0%, #e7919d 100%);
+    color: white;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+/* Responsive: Tự động giảm cột khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

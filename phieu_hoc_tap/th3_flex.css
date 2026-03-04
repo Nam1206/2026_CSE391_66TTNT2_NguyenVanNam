@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+    font-size: 40px;
+}
+
+/* Cải tiến .posts bằng Flexbox */
+.posts {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: space-between;
+       max-width: 1200px;
+       margin: 40px auto;
+}
+
+.card {
+    flex: 1 1 300px; /* 3 cột với gap 20px */
+    background: aqua;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Responsive: Khi màn hình < 768px, card chiếm full width */
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+    }
+}
