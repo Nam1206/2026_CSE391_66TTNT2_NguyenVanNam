@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đăng Ký</title>
+</head>
+<body>
+
+  <h1>Đăng Ký Tài Khoản</h1>
+
+  <form id="form-dangky">
+
+    <div>
+      <label>Họ và tên:</label><br>
+      <input type="text" id="hoTen"><br>
+      <span id="error-hoTen"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Email:</label><br>
+      <input type="text" id="email"><br>
+      <span id="error-email"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Số điện thoại:</label><br>
+      <input type="text" id="sdt"><br>
+      <span id="error-sdt"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Mật khẩu:</label><br>
+      <input type="password" id="matKhau"><br>
+      <span id="error-matKhau"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Xác nhận mật khẩu:</label><br>
+      <input type="password" id="xacNhan"><br>
+      <span id="error-xacNhan"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Giới tính:</label><br>
+      <input type="radio" name="gioiTinh" value="Nam"> Nam
+      <input type="radio" name="gioiTinh" value="Nữ"> Nữ
+      <input type="radio" name="gioiTinh" value="Khác"> Khác<br>
+      <span id="error-gioiTinh"></span>
+    </div>
+    <br>
+
+    <div>
+      <input type="checkbox" id="dieuKhoan">
+      <label>Tôi đồng ý với điều khoản sử dụng</label><br>
+      <span id="error-dieuKhoan"></span>
+    </div>
+    <br>
+
+    <button type="submit">Đăng Ký</button>
+
+  </form>
+
+
+  <div id="thanh-cong" style="display:none">
+    <h2>Đăng ký thành công! 🎉</h2>
+    <p>Chào mừng <strong id="ten-hienthi"></strong> đã đăng ký tài khoản!</p>
+  </div>
+
+  <script src="bai2_1.js"></script>
+</body>
+</html>

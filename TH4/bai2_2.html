@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đặt Hàng</title>
+</head>
+<body>
+
+  <h1>Form Đặt Hàng Trực Tuyến</h1>
+
+  <form id="form-dathang">
+
+    <div>
+      <label>Tên sản phẩm:</label><br>
+      <select id="sanPham">
+        <option value="">-- Chọn sản phẩm --</option>
+        <option value="1">Áo thun</option>
+        <option value="2">Quần jeans</option>
+        <option value="3">Giày sneaker</option>
+        <option value="4">Mũ lưỡi trai</option>
+        <option value="5">Túi xách</option>
+      </select><br>
+      <span id="error-sanPham"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Số lượng:</label><br>
+      <input type="number" id="soLuong" min="1" max="99" placeholder="1 - 99"><br>
+      <span id="error-soLuong"></span>
+    </div>
+    <br>
+
+    <div>
+      <strong>Tổng tiền: <span id="tongTien">0 ₫</span></strong>
+    </div>
+    <br>
+
+    <div>
+      <label>Ngày giao hàng:</label><br>
+      <input type="date" id="ngayGiao"><br>
+      <span id="error-ngayGiao"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Địa chỉ giao hàng:</label><br>
+      <input type="text" id="diaChi" placeholder="Số nhà, đường, phường, quận, thành phố"><br>
+      <span id="error-diaChi"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Ghi chú: <span id="demKyTu">0/200</span></label><br>
+      <textarea id="ghiChu" rows="3" cols="40" placeholder="Không bắt buộc, tối đa 200 ký tự"></textarea><br>
+      <span id="error-ghiChu"></span>
+    </div>
+    <br>
+
+    <div>
+      <label>Phương thức thanh toán:</label><br>
+      <input type="radio" name="thanhToan" value="COD"> COD (Tiền mặt khi nhận hàng)
+      <input type="radio" name="thanhToan" value="Chuyen khoan"> Chuyển khoản
+      <input type="radio" name="thanhToan" value="Vi dien tu"> Ví điện tử<br>
+      <span id="error-thanhToan"></span>
+    </div>
+    <br>
+
+    <button type="submit">Đặt Hàng</button>
+
+  </form>
+
+  <div id="div-xacnhan" style="display:none">
+    <h2>Xác Nhận Đơn Hàng</h2>
+    <p><strong>Sản phẩm:</strong> <span id="xn-sanPham"></span></p>
+    <p><strong>Số lượng:</strong> <span id="xn-soLuong"></span></p>
+    <p><strong>Tổng tiền:</strong> <span id="xn-tongTien"></span></p>
+    <p><strong>Ngày giao:</strong> <span id="xn-ngayGiao"></span></p>
+    <p><strong>Địa chỉ:</strong> <span id="xn-diaChi"></span></p>
+    <p><strong>Thanh toán:</strong> <span id="xn-thanhToan"></span></p>
+    <p>Bạn có chắc chắn muốn đặt hàng?</p>
+    <button id="btn-xacnhan">Xác Nhận</button>
+    <button id="btn-huy">Hủy</button>
+  </div>
+
+  <div id="thanh-cong" style="display:none">
+    <h2>Đặt hàng thành công! </h2>
+    <p>Đơn hàng của bạn đã được ghi nhận. Chúng tôi sẽ liên hệ sớm nhất!</p>
+  </div>
+
+  <script src="bai2_2.js"></script>
+</body>
+</html>

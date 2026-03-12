@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Điểm Sinh Viên</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quản Lý Điểm Sinh Viên</h1>
+        
+        <div class="input-group">
+            <input type="text" id="hoTen" placeholder="Nhập họ tên">
+            <input type="number" id="diem" placeholder="Điểm (0-10)" min="0" max="10">
+            <button onclick="themSinhVien()">Thêm</button>
+        </div>
+        
+        <table id="bangDiem">
+            <thead>
+                <tr>
+                    <th>STT</th> 
+                    <th>Họ Tên</th>
+                    <th>Điểm</th>
+                    <th>Xếp Loại</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td colspan="5" class="empty-message">Chưa có dữ liệu</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="bai1_1.js"> </script>
+</body>
+</html>
